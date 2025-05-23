@@ -1,0 +1,17 @@
+import * as React from "react";
+const Log = (props) => (
+    <svg
+        width={16}
+        height={15}
+        viewBox="0 0 16 15"
+        fill="#000"
+        xmlns="http://www.w3.org/2000/svg"
+        {...props}
+    >
+        <path d="M15.4731 0H1.06441V3.13278H15.4731V0Z" fill="white" />
+        <path d="M14.4087 3.75293H0V6.88571H14.4087V3.75293Z" fill="white" />
+        <path d="M14.4087 11.2202H0V14.353H14.4087V11.2202Z" fill="white" />
+        <path d="M15.4796 7.47144H1.07095V10.6042H15.4796V7.47144Z" fill="white" />
+    </svg>
+);
+export default Log;
