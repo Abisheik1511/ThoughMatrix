@@ -66,7 +66,7 @@ const HeroCarousel = () => {
     const currentContent = contents[currentIndex];
 
     return (
-        <Box sx={{ backgroundColor: '#FBEEEE', height: '65vh', p: 4, position: 'relative' }}>
+        <Box sx={{ backgroundColor: '#FBEEEE', p: 4, position: 'relative' }}>
             <Grid container spacing={4} alignItems="center" justifyContent="center" sx={{ height: '100%' }}>
                 <Grid item xs={12} md={6} sx={{ textAlign: 'center' }}>
                     <Box
@@ -115,9 +115,15 @@ const HeroCarousel = () => {
                     {showText && (
                         <Typography
                             sx={{
-                                fontSize: "45px",
+                                fontSize: {
+                                    xs: '22px',
+                                    sm: '28px',
+                                    md: '35px',
+                                    lg: '45px'
+                                },
                                 fontWeight: 600,
                                 color: '#000',
+                                textAlign: { xs: 'center', md: 'left' },
                                 transition: 'opacity 0.5s ease-in-out',
                                 "&::after": {
                                     content: '"."',
